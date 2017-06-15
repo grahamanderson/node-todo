@@ -9,7 +9,7 @@ if(err){
 console.log('Connected to MongoDB server');
 
 
-db.collection('Todos').insertOne({
+db.collection('Users').insertOne({
   name: 'Graham',
   age: 65,
   location: 'New York'
