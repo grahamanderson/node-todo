@@ -1,15 +1,13 @@
 {
-  "name": "Weather App",
+  "name": "node-todo-api",
   "version": "1.0.0",
-  "description": "Weather app",
+  "description": "node todo app",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test karma start",
-    "build": "webpack",
-    "start": "npm run build && node server.js",
-    "dev": "webpack-dev-server --inline --hot -p"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
-  "author": "Andrew Mead",
+  "author": "Graham Anderson",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",
@@ -21,7 +19,6 @@
     "body-parser": "^1.17.2",
     "css-loader": "^0.23.1",
     "deep-freeze-strict": "^1.1.1",
-    "expect": "^1.14.0",
     "express": "^4.13.4",
     "firebase": "^4.1.1",
     "foundation-sites": "6.2.0",
@@ -62,13 +59,16 @@
     "eslint-plugin-html": "^2.0.3",
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-react": "^7.0.1",
+    "expect": "^1.20.2",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^0.2.2",
     "karma-mocha": "^0.2.2",
     "karma-mocha-reporter": "^2.0.0",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^1.7.0",
-    "mocha": "^2.4.5",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
     "webpack-dev-server": "^1.2.2"
   }
 }
