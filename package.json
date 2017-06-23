@@ -1,5 +1,5 @@
 {
-  "name": "node-todo-api",
+  "name": "node-chat-app",
   "version": "1.0.0",
   "description": "node todo app",
   "main": "index.js",
